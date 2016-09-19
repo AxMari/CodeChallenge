@@ -1,0 +1,61 @@
+
+
+.playerwindow {
+	width: 100%;
+	text-align: center;
+	position: relative;
+	overflow: hidden;
+    padding-bottom: 50.4%;
+    padding-top: 50px;
+    height: 0;
+
+}
+
+.playerwindow iframe {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+@media (min-width: 1060px){
+	.playerwindow{
+		padding-bottom: 585px;
+	}
+}
+
+nav {
+	position:absolute;
+	height: 1em;
+	width:100vw;
+	margin-bottom: 3vh;
+}
+
+.top {
+	top:0;
+}
+
+.bottom {
+	bottom: 0;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	display: inline;
+	float: left;
+	text-align: center;
+
+}
+
+li a {
+	text-decoration: none;
+}

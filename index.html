@@ -8,25 +8,41 @@
 	<meta name="viewport" content="width=device-width, height =device-height, initial-scale=1">
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-route.js"></script>
-	<link rel="stylesheet" type="text/css" href="assets/styles/style.css">
 	<script type="text/javascript" src="assets/js/script.js"></script>
 	<script type="text/javascript" src="assets/controllers/module.js"></script>
+	<link rel="stylesheet" type="text/css" href="assets/styles/base.css">
+	<link rel="stylesheet" type="text/css" href="assets/styles/layout.css">
+	<link rel="stylesheet" type="text/css" href="assets/styles/modules.css">
+	<link rel="stylesheet" type="text/css" href="assets/styles/normalize.css">
+	<link rel="stylesheet" type="text/css" href="assets/styles/landscape.css">
 	<title>YouTube Trailers</title>
 </head>
 <body ng-app="youTube">
-<nav>
+<nav class="top">
 	<ul>
 		<li><a href="#/">Home</a></li>
-		<li><a href="#/Trailer1">Trailer 1</a></li>
-		<li><a href="#/Trailer2">Trailer 2</a></li>
-		<li><a href="#/Trailer3">Trailer 3</a></li>
-		<li><a href="#/Trailer4">Trailer 4</a></li>
-		<li><a href="#/Trailer5">Trailer 5</a></li>
+		<li><a href="#/Trailer1">Spirited Away</a></li>
+		<li><a href="#/Trailer2">Song of the Sea</a></li>
+		<li><a href="#/Trailer3">Moana</a></li>
+		<li><a href="#/Trailer4">Interstellar</a></li>
+		<li><a href="#/Trailer5">300</a></li>
 		<li><a href="#/error">Error</a></li>
 	</ul>
 </nav>
 
 <ng-view></ng-view>
+
+<nav>
+	<ul style="list">
+		<li><a href="#/">Home</a></li>
+		<li><a href="#/Trailer1">Spirited Away</a></li>
+		<li><a href="#/Trailer2">Song of the Sea</a></li>
+		<li><a href="#/Trailer3">Moana</a></li>
+		<li><a href="#/Trailer4">Interstellar</a></li>
+		<li><a href="#/Trailer5">300</a></li>
+		<li><a href="#/error">Error</a></li>
+	</ul>
+</nav>
 
 </body>
 </html>
