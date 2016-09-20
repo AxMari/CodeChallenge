@@ -1,4 +1,68 @@
+/*navigation*/
 
+.nav__menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(51, 51, 51);
+}
+
+.nav__menu li {
+	float: left;
+}
+
+.nav__menu li a {
+    display: inline-block;
+    color: 	rgb(255, 255, 255);
+    text-align: center;
+    padding: 0.75em;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+.nav__menu a:hover {
+	background-color: rgb(179,18,23);
+}
+
+.icon {
+	display: none;
+}
+
+@media(max-width: 768px){
+	.nav__menu li:not(:first-child) {
+		display: none;
+	}
+
+	.nav__menu li.icon {
+		float: right;
+		display: inline-block;
+	}
+
+	.nav__menu.responsive {
+		position: relative;
+	}
+
+	.nav__menu.responsive li.icon {
+	position: absolute;
+	right: 0;
+	top: 0;
+	}
+
+	.nav__menu.responsive li {
+	float: none;
+	display: inline;
+	}
+
+	.nav__menu.responsive a {
+	display: block;
+	text-align: left;
+	}
+
+}
+
+/*theater*/
 
 .playerwindow {
 	width: 100%;
@@ -28,34 +92,62 @@
 	}
 }
 
-nav {
-	position:absolute;
-	height: 1em;
-	width:100vw;
-	margin-bottom: 3vh;
-}
 
-.top {
-	top:0;
-}
+/*480px, 768px, 992px, and 1200px*/
 
-.bottom {
-	bottom: 0;
-}
+/*partials*/
 
-ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-}
-
-li {
-	display: inline;
-	float: left;
+.title {
 	text-align: center;
-
+	margin: 0; 
+	padding: 1em;
+	font-size: 4em;
 }
 
-li a {
-	text-decoration: none;
+.background{
+	height: 100%;
+	width: 100%;
+	background-color: rgba(255,255,255,0.7);
 }
+
+.spiritedaway{
+	background-image: url(../img/spiritedaway.png);
+	background-size: cover;
+}
+
+.songofthesea{
+	background-image: url(../img/songofthesea.jpg);
+	background-size: cover;
+}
+
+.moana{
+	background-image: url(../img/moana.jpg);
+	background-size: cover;
+}
+
+.interstellar{
+	background-image: url(../img/interstellar.jpg);
+	background-size: cover;
+}
+
+.threehundred{
+	background-image: url(../img/300.jpg);
+	background-size: cover;	
+}
+
+.trailer__desc {
+	opacity: 0.8;
+	line-height: 1.5em;
+}
+
+#youtube {
+	display: block;
+	width: 75vw;
+	margin: 0 auto;
+	padding-top: 3em;
+}
+
+#name{
+	text-align: center;
+}
+

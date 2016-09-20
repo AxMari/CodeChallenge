@@ -9,40 +9,33 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-route.js"></script>
 	<script type="text/javascript" src="assets/js/script.js"></script>
+	<script type="text/javascript" src="assets/js/routing.js"></script>
 	<script type="text/javascript" src="assets/controllers/module.js"></script>
 	<link rel="stylesheet" type="text/css" href="assets/styles/base.css">
 	<link rel="stylesheet" type="text/css" href="assets/styles/layout.css">
 	<link rel="stylesheet" type="text/css" href="assets/styles/modules.css">
 	<link rel="stylesheet" type="text/css" href="assets/styles/normalize.css">
-	<link rel="stylesheet" type="text/css" href="assets/styles/landscape.css">
 	<title>YouTube Trailers</title>
 </head>
 <body ng-app="youTube">
-<nav class="top">
-	<ul>
-		<li><a href="#/">Home</a></li>
-		<li><a href="#/Trailer1">Spirited Away</a></li>
-		<li><a href="#/Trailer2">Song of the Sea</a></li>
-		<li><a href="#/Trailer3">Moana</a></li>
-		<li><a href="#/Trailer4">Interstellar</a></li>
-		<li><a href="#/Trailer5">300</a></li>
-		<li><a href="#/error">Error</a></li>
-	</ul>
-</nav>
 
-<ng-view></ng-view>
-
+<header>
 <nav>
-	<ul style="list">
+	<ul class="row row--darkgrey nav__menu" id="menu">
 		<li><a href="#/">Home</a></li>
 		<li><a href="#/Trailer1">Spirited Away</a></li>
 		<li><a href="#/Trailer2">Song of the Sea</a></li>
 		<li><a href="#/Trailer3">Moana</a></li>
 		<li><a href="#/Trailer4">Interstellar</a></li>
 		<li><a href="#/Trailer5">300</a></li>
-		<li><a href="#/error">Error</a></li>
+		<li class="icon">
+			<a href="javascript:void(0);" onclick="navFunction()">Movies</a>
+		</li>
 	</ul>
 </nav>
+</header>
+
+<ng-view style="height:100%;"></ng-view>
 
 </body>
 </html>
