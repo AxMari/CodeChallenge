@@ -19,7 +19,6 @@
     padding: 0.75em;
     text-decoration: none;
     transition: 0.3s;
-    font-size: 17px;
 }
 
 .nav__menu a:hover {
@@ -61,7 +60,6 @@
 	}
 
 }
-
 /*theater*/
 
 .playerwindow {
@@ -92,9 +90,6 @@
 	}
 }
 
-
-/*480px, 768px, 992px, and 1200px*/
-
 /*partials*/
 
 .title {
@@ -102,6 +97,12 @@
 	margin: 0; 
 	padding: 1em;
 	font-size: 4em;
+}
+
+@media(max-width: 768px){
+	.title{
+	font-size: 2em;
+	}
 }
 
 .background{
@@ -142,12 +143,23 @@
 
 #youtube {
 	display: block;
-	width: 75vw;
+	width: 50vw;
 	margin: 0 auto;
 	padding-top: 3em;
 }
 
 #name{
+	text-align: center;
+}
+
+.error{
+	color: rgb(179,18,23);
+	font-size: 8em;
+	margin-top: 1em;
+	text-align: center;
+}
+
+.error__sub{
 	text-align: center;
 }
 
